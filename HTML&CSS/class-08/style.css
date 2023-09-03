@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* border: 1px solid red; */
+}
+/* div{
+    background-color: red;
+    width: 50%;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 10px;
+} */
+
+/* h1{
+    display: inline;
+    margin-top: 100px;
+    width: 1000px;
+    text-align: start;
+} */
+li{
+    display: inline;
+}
+li:hover{
+    color: blue;
+}
+ul{
+    padding: 30px;
+    display: inline;
+}
+.list{
+    text-align: end;
+    background-color: black;
+    color: white;
+}
