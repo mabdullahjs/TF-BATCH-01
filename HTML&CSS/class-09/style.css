@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
-    
+    /* border: 1px solid red; */
+
 }
+
 /* relative
 absolute
 fixed
@@ -40,7 +41,7 @@ sticky */
     position: sticky;
 } */
 
-
+/* 
 li{
     display: inline;
 }
@@ -48,20 +49,41 @@ li{
 ul{
     display: inline;
 }
+ */
 
 
 
 
 
+.container {
+    width: 300px;
+    height: 300vh;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.red{
+    background-color: red;
+    position: fixed;
+    /* position: relative;
+    top: 100px;
+    bottom: 100px;
+    right: 60px; */
+    top: 100px;
+}
+.blue{
+    background-color: blue;
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 10px; */
+}
+.green{
+    background-color: green;
+    position: sticky;
+    top: 40px;
+} 
