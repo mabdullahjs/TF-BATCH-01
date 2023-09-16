@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+/* @media(min-width: 1000px){
+    body{
+        background-color: red;
+    }
+}
+@media(min-width: 1500px){
+    body{
+        background-color: purple;
+    }
+}
+@media(min-width: 1800px){
+    body{
+        background-color:green;
+    }
+}
+@media(min-width: 2000px){
+    body{
+        background-color:blue;
+    }
+} */
+@media(max-width: 1000px){
+    body{
+        background-color: red;
+    }
+}

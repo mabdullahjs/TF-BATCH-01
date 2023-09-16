@@ -193,4 +193,17 @@ body{
     background-color: var(--red);
     border: none;
 }
+
+.icon{
+    display: none;
+}
+
+@media(max-width: 940px){
+    .items{
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+}
 /* navbar end */
