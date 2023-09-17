@@ -17,6 +17,9 @@
 /* default variables end*/
 
 /* utility classes start */
+.text-center{
+    text-align: center;
+}
 .d-flex{
     display: flex;
     align-items: center;
@@ -58,7 +61,7 @@
     margin-top: 15px;
 }
 .mt-4{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .mb-1{
     margin-bottom: 5px;
@@ -174,6 +177,21 @@
 .text-white{
     color: white;
 }
+.text-sm{
+    font-size: 15px;
+}
+.text-md{
+    font-size: 20px;
+}
+.text-lg{
+    font-size: 25px;
+}
+.text-xl{
+    font-size: 30px;
+}
+.w-50{
+    width: 40%;
+}
 
 /* utility classes end */
 
@@ -198,12 +216,61 @@ body{
     display: none;
 }
 
+/* navbar end */
+
+/* carousal start */
+#carousal{
+    width: 100%;
+}
+
+
+
+/* carousal end */
+
+
+
+
+
+
+/* responsive design */
 @media(max-width: 940px){
+    /* navbar area start */
     .items{
         display: none;
     }
     .icon{
         display: block;
     }
+    /* navbar area end */
 }
-/* navbar end */
+
+/* Choose by Category area start */
+.card-img{
+    width: 206px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* Choose by Category area end */
+
+/* discover area start */
+.discover-head{
+    letter-spacing: 10px;
+}
+
+.discover-img-two{
+    width: 80%;
+}
+.discover-img{
+    width: 50%;
+}
+.discover-content{
+    width: 50%;
+}
+/* discover area end */
+
+
+
+
+/* responsive design */
