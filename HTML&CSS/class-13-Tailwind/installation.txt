@@ -1,0 +1,16 @@
+Nodejs download krna haa
+
+npm i -g typescript
+
+dist and src ka folder bnana haa.
+
+1: npx tailwindcss init
+2: content ka undar ./dist/index.html
+3: src ka undar input.css bnani haa 
+
+(@tailwind base;
+@tailwind components;
+@tailwind utilities; ) ya src ka undar input.css ki file ma paste krna ha
+
+
+npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch
