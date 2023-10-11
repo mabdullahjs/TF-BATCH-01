@@ -94,6 +94,118 @@
 
 
 
+// var
+// let
+// const
+
+
+
+// var greetUser = ''
+// let greetUser = '';
+
+// const greetUser = ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const names = 'abdullah';
+// const lastName = 'khan'
+// console.log('my name is ' + names + " " + lastName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const num1 = 10;
+// const num2 = 20;
+
+// console.log(num1 - num2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
