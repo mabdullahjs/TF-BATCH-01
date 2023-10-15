@@ -95,6 +95,126 @@
 
 
 
+// console.log('hello world');
+// let totalMarks = 100;
+// let obtained = 70;
+// let percentage = obtained / totalMarks * 100
+// console.log(percentage + "%");
+
+
+
+
+
+
+
+
+// let greetUser;
+// let greetUser;
+// console.log(greetUser);
+
+// let names = 'abdullah'
+// greetUser = 'hello' + names
+// const abc = 'abdullah';
+
+
+
+
+
+
+// let userId = '10';
+// let numUserId = +userId;
+// console.log(numUserId + 10);
+
+
+// let id;
+// id = Boolean(id);
+// console.log(id);
+
+
+
+
+
+
+
+// alert('hello world');
+// const userName = Number(prompt('enter your name'));
+// console.log(typeof(userName));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//percentage calculator
+
+let studentName = prompt('enter your name');
+let chemMarks = +prompt('Enter chem marks');
+let phyMarks = +prompt('Enter physics marks');
+let mathsMarks = +prompt('Enter maths marks');
+let bioMarks = +prompt('Enter biology marks');
+
+
+
+let totalMarks = 400;
+let userTotal = chemMarks + phyMarks + mathsMarks + bioMarks;
+let percentage = userTotal / totalMarks * 100;
+
+
+console.log(studentName + " total marks is "+ userTotal + " and its percentage is "+ percentage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
