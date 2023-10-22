@@ -270,6 +270,9 @@
 // && AND == URDU == OOR
 // || OR == URDU == YAA
 
+// true || false === true
+// true && false === false
+
 
 
 // let num1 = 10;
@@ -422,21 +425,21 @@
 
 
 
-const bankBalance = 2000000;
-const car = 'fortuner';
-const apnaHome = true;
+// const bankBalance = 2000000;
+// const car = 'fortuner';
+// const apnaHome = true;
 
-if(bankBalance > 500000 && car === 'fortuner' && apnaHome === true){
-    console.log('rishta mubarak hoo');
-    console.log('Mithai leta hua ana');
-    console.log('dadi bhi saath ayengi');
-} else if(bankBalance > 500000 || car ==='mehran' && apnaHome === false){
-    console.log('istekhara ma naa aya ha');
-} else if(bankBalance > 150000 && car === 'civic' && apnaHome === true){
-    console.log('abba maan gaye hain');
-}else{
-    console.log('istekhara ma naa aya ha , abba nahi maan rha , ammi nas kaat laingi..');
-}
+// if(bankBalance > 500000 && car === 'fortuner' && apnaHome === true){
+//     console.log('rishta mubarak hoo');
+//     console.log('Mithai leta hua ana');
+//     console.log('dadi bhi saath ayengi');
+// } else if(bankBalance > 500000 || car ==='mehran' && apnaHome === false){
+//     console.log('istekhara ma naa aya ha');
+// } else if(bankBalance > 150000 && car === 'civic' && apnaHome === true){
+//     console.log('abba maan gaye hain');
+// }else{
+//     console.log('istekhara ma naa aya ha , abba nahi maan rha , ammi nas kaat laingi..');
+// }
 
 
 
