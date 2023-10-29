@@ -3,9 +3,8 @@
 ## Course Outline
 
 - [x] HTML
-- [ ] CSS
-- [ ] bootstrap/tailwind
-- [ ] CSS HACKATHON
+- [x] CSS
+- [x] bootstrap/tailwind
 - [ ] JAVASCRIPT
 - [ ] GITHUB/GIT
 - [ ] FIREBASE
