@@ -146,8 +146,8 @@
 
 
 
-const newArr = Array('names' , 'place');
-console.log(newArr);
+// const newArr = Array('names' , 'place');
+// console.log(newArr);
 
 
 
