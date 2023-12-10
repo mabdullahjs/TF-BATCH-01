@@ -156,10 +156,10 @@
 // // //       }
 // // //     }
 // // //   };
-  
+
 // // // //   console.log(nestedObject);
-  
-  
+
+
 // // //   console.log(nestedObject.prop2.prop22.prop222.prop2222.prop22222.prop222222.prop2222222.prop22222222);
 
 
@@ -343,8 +343,24 @@
 
 
 
+// const gym = {
+//     name: 'mik',
+//     price: 2000,
+//     discount: function (numberOfClients){
+//         if(numberOfClients > 2){
+//             const discountPrice = this.price * 10 / 100 
+//             console.log(price - discountPrice);
+//         }
+//         else{
+//             console.log(this.price);
+//         }
+//     }
+
+// }
 
 
+
+gym.discount(5)
 
 
 
