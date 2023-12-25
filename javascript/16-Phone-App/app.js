@@ -64,8 +64,10 @@ const phones = [
 // getting element from html
 const div = document.querySelector('#div');
 
+let dataFromLocalStorage = JSON.parse(localStorage.getItem('cartItems'))
+console.log(dataFromLocalStorage);
 //cart items
-let cartItems = [];
+let cartItems = [...dataFromLocalStorage];
 
 phones.map((item, index) => {
     div.innerHTML += `
@@ -80,7 +82,7 @@ phones.map((item, index) => {
 
 function addToCart(index) {
     if (cartItems.indexOf(phones[index]) !== -1) {
-        let indexNumber = cartItems.indexOf(phones[index]) 
+        let indexNumber = cartItems.indexOf(phones[index])
         cartItems[indexNumber].quantity += 1;
         console.log(cartItems);
     } else {
@@ -92,7 +94,31 @@ function addToCart(index) {
 
 
 //checkout function
-function checkout(){
-    localStorage.setItem('cartItems' , JSON.stringify(cartItems))
+function checkout() {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems))
     window.location = 'checkout.html'
 }
+
+//spread operator
+
+// let obj = {
+//     name:'abdullah',
+// }
+
+// let obj2 = {
+//     age:20
+// }
+
+// let obj3 = {
+//     ...obj,...obj2 ,
+//     new:3
+// }
+
+// console.log(obj3);
+
+// let arr = ['a', 'b', 'c', 'd'];
+// let arr2 = [1, 2, 3, 4, 5];
+
+// let arr3 = [...arr , ...arr2];
+
+// console.log(arr3);
