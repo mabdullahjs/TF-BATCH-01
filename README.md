@@ -5,9 +5,9 @@
 - [x] HTML
 - [x] CSS
 - [x] bootstrap/tailwind
-- [ ] JAVASCRIPT
-- [ ] GITHUB/GIT
-- [ ] FIREBASE
+- [x] JAVASCRIPT
+- [x] GITHUB/GIT
+- [x] FIREBASE
 - [ ] JS HACKATHON
 - [ ] REACTJS
 - [ ] nodejs expressjs
