@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- navbar started -->
+    <div class="navbar bg-black text-white">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">Todo App</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li id="logout"><a>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar ended -->
+
+    <form class="flex justify-center  gap-5 mt-5" id="form">
+        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs w-[30%]" id="todo-val" />
+        <button class="btn btn-primary bg-primary" type="submit">Add Todo</button>
+    </form>
+
+
+    <!-- todo started -->
+    <div class="mt-5" id="todo-render">
+        
+    </div>
+    <!-- todo ended -->
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="home.js"></script>
+</body>
+
+</html>
