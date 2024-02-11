@@ -1,20 +1,3 @@
-// import { useState } from "react";
-
-// export default function App() {
-//   let [num, setNum] = useState(0);
-
-//   function addNumber() {
-//     setNum(num + 1);
-//   }
-//   return (
-//     <div>
-//       <h1>Hello world {num}</h1>
-//       <button onClick={addNumber}>Add {num}</button>
-//       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam est beatae, fuga aspernatur dicta iure omnis nam fugiat sint quaerat nisi, ad iusto saepe modi, tempore consectetur repellat nesciunt! {num}</p>
-//     </div>
-//   );
-// }
-
 import React, { useState, useRef } from "react";
 
 const App = () => {
@@ -23,8 +6,6 @@ const App = () => {
 
   const addTodo = (event) => {
     event.preventDefault();
-    // todo.push(input.current.value);
-
     setTodo([...todo, input.current.value]);
     input.current.value = "";
     console.log(todo);
