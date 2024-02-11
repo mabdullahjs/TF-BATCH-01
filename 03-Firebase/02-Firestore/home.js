@@ -34,23 +34,29 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 
-//logout user
-
-const logout = document.querySelector('#logout');
-logout.addEventListener('click', () => {
-    signOut(auth).then(() => {
-        window.location = 'login.html'
-    }).catch((error) => {
-        console.log(error);
-    });
-
-})
-
-
 //add todo
 const form = document.querySelector('#form');
 const todoVal = document.querySelector('#todo-val');
 const div = document.querySelector('#todo-render');
+
+
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const obj = {
+        title: todoVal.value,
+        date: Timestamp.fromDate(new Date()),
+        uid: userUid
+    }
+    arr.unshift(obj)
+    renderTodo();
+    try {
+        const docRef = await addDoc(collection(db, "todos"), obj);
+        console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+        console.error("Error adding document: ", e);
+    }
+    todoVal.value = ''
+})
 
 
 
@@ -94,20 +100,18 @@ const renderTodo = () => {
         })
     })
 }
-form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const obj = {
-        title: todoVal.value,
-        date: Timestamp.fromDate(new Date()),
-        uid: userUid
-    }
-    arr.unshift(obj)
-    renderTodo();
-    try {
-        const docRef = await addDoc(collection(db, "todos"), obj);
-        console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-        console.error("Error adding document: ", e);
-    }
-    todoVal.value = ''
+
+
+
+
+
+//logout user
+
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', () => {
+    signOut(auth).then(() => {
+        window.location = 'login.html'
+    }).catch((error) => {
+        console.log(error);
+    });
 })

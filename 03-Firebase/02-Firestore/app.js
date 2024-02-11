@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { auth, storage } from "./config.js";
-import { ref, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js'
+import { ref, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js';
 
 
 
@@ -46,4 +46,4 @@ function showUrl() {
     });
 }
 
-storeimg.addEventListener('click' , showUrl)
+storeimg.addEventListener('click' , showUrl);
