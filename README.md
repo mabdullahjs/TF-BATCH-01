@@ -8,8 +8,8 @@
 - [x] JAVASCRIPT
 - [x] GITHUB/GIT
 - [x] FIREBASE
-- [ ] JS HACKATHON
-- [ ] REACTJS
+- [x] REACTJS
+- [ ] REACT HACKATHON
 - [ ] nodejs expressjs
 - [ ] mongodb
 - [ ] REACT NATIVE
