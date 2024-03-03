@@ -13,6 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+import { auth } from '../config/firebase/firebaseconfig';
 
 
 
@@ -40,7 +42,6 @@ function ResponsiveAppBar() {
             return
         }
         navigate(`/${page}`)
-        // page === 'home' ? navigate('/') : navigate(`/${page}`)
     };
     const handleCloseUserMenu = (setting) => {
         setAnchorElUser(null);
@@ -50,6 +51,11 @@ function ResponsiveAppBar() {
             return
         }else if(setting === 'logout'){
             console.log('logout')
+            signOut(auth).then(() => {
+                navigate('/login')
+              }).catch((error) => {
+                console.log('error occured');
+              });
             return
         }
         navigate(`/${setting}`)
