@@ -10,7 +10,7 @@ const Home = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      const q = query(collection(db, "todos`"), where("uid", "==", auth.currentUser.uid));
+      const q = query(collection(db, "todos"), where("uid", "==", auth.currentUser.uid));
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
         data.push({ ...doc.data(), id: doc.id });
