@@ -11,7 +11,7 @@ import About from '../../screens/About'
 const Routerconfig = () => {
     return (
         <BrowserRouter>
-        <ResponsiveAppBar/>
+        <ResponsiveAppBar />
             <Routes>
                 <Route path='/' element={<ProtectedRoutes component={<Home />}/>} />
                 <Route path='/login' element={<Login />} />
