@@ -14,11 +14,14 @@ const Home = () => {
         console.log(err);
       })
   }, [])
+
+ 
+
   return (
     <div className='flex justify-center gap-8 flex-wrap'>
       {data ? data.map((item)=>{
         return <Card key={item.id} url={item.thumbnail
-        } title={item.title} desc={item.description} />
+        } title={item.title} desc={item.description} id={item.id} />
       }) : <h1>Loading..</h1>}
 
     </div>
