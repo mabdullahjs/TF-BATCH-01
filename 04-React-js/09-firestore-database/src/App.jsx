@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { useRef } from 'react'
 import { db } from './config/firebase/firebaseconfig';
 
@@ -17,7 +17,7 @@ const App = () => {
       const arr = []
       const querySnapshot = await getDocs(collection(db, "users"));
       querySnapshot.forEach((doc) => {
-        arr.push(doc.data());
+        arr.push({ ...doc.data(), docid: doc.id });
       });
       setData(arr);
       console.log(arr)
@@ -35,11 +35,38 @@ const App = () => {
         city: city.current.value
       });
       console.log("Document written with ID: ", docRef.id);
+      setData([{
+        username: username.current.value,
+        email: email.current.value,
+        age: age.current.value,
+        city: city.current.value,
+        docid: docRef.id
+      }, ...data])
     } catch (e) {
       console.error("Error adding document: ", e);
     }
 
   }
+
+  const deleteUser = async (index) => {
+    console.log('user deleted', data[index]);
+    await deleteDoc(doc(db, "users", data[index].docid));
+    data.splice(index, 1);
+    setData([...data]);
+  }
+  const editUser = async (index) => {
+    console.log('user edited', data[index].docid);
+    const update = doc(db, "users", data[index].docid);
+
+
+    // Set the "capital" field of the city 'DC'
+    await updateDoc(update, {
+      username: 'updated username'
+    });
+  }
+
+
+
   return (
     <>
       <h1>Hello world</h1>
@@ -58,6 +85,8 @@ const App = () => {
             <h1>Email : {item.email}</h1>
             <h1>City : {item.city}</h1>
             <h1>Age : {item.age}</h1>
+            <button onClick={() => deleteUser(index)}>delete</button>
+            <button onClick={() => editUser(index)}>edit</button>
             <hr />
           </div>
         }) : <h1>Loading...</h1>}
