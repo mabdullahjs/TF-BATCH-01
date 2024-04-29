@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addTodo, removeTodo } from './config/redux/reducers/todoSlice';
+import { addTodo, editTodo, removeTodo } from './config/redux/reducers/todoSlice';
 
 const App = () => {
 
@@ -29,6 +29,14 @@ const App = () => {
     console.log(index);
     dispatch(removeTodo({
       index : index
+    }))
+  }
+
+  //update todo
+  const updateTodo = (index)=>{
+    dispatch(editTodo({
+      index: index,
+      title:'update through redux'
     }))
   }
 
