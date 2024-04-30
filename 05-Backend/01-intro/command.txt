@@ -1,0 +1,5 @@
+npm init -y
+
+node index.js
+
+express.js
